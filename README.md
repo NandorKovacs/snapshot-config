@@ -1,7 +1,7 @@
 # What this is
 This is my snapshot configuration. It uses btrbk.
 
-I have a systemd timer, that runs btrbk each hour to snapshot. The btrbk config for my laptop does only this; the btrbk config for my pc also backups the root and home snapshot periodically, performing incremental snapshots weekly, and a non incremental snapshot every month.
+I have a systemd timer, that runs btrbk each hour to create a snapshot from the root and home subvolume. It keeps each snapshot for 12h, then discards it. The btrbk config for my pc also backups the root and home snapshot periodically, performing incremental snapshots weekly, and a non incremental snapshot every month.
 
 I also have a pacman hook, so that btrbk performs a snapshot (but no backup here as that can take a long time, that should run in the background) before and after each upgrade, install or remove operation.
 
