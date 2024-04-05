@@ -46,6 +46,9 @@ Install grub-btrfs. For me it worked without extra configuration; just run it on
 
 # sources
 https://github.com/digint/btrbk
+
 https://wiki.archlinux.org/title/pacman#Hooks
+
 https://man.archlinux.org/man/alpm-hooks.5
+
 https://wiki.archlinux.org/title/btrfs
