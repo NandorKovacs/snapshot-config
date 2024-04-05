@@ -9,12 +9,13 @@ With the use of grub-btrfs, i can boot into the snapshots on the fly.
 
 # Setup
 My folder structure:
+```
 /               subvol=@root
 |- home         subvol=@home
 |- var          subvol=@var
 |- .snapshots   subvol=@snapshots
 |- bulk         /dev/mybackupdrive
-
+```
 
 - have subvolume @snapshots mounted to /.snapshots
 - have subvolume @root mounted to /
