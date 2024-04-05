@@ -28,7 +28,7 @@ Optional:
 For every following step, make sure that the folder and subvolume names in the configurations match yours if you don't have them named exactly like mine
 - install btrbk
     - put your chosen btrbk config in /etc/btrbk/btrbk.conf. I have one for my laptop, and one for my desktop. The difference is that the desktop configuration performs regular backups to a backup drive.
-    - test it with btrbk -nS run (-n dry-run, -S show schedule)
+    - test it with `btrbk -nS run` (-n dry-run, -S show schedule)
 - start systemd timer
     - put the systemd service files in /usr/lib/systemd/system (btrbk installs these automatically; however the btrbk.timer runst daily, not hourly by default. The btrbk.timer file in this repository runs hourly, that beeing the only difference)
     - run `systemctl enable --now btrbk.timer`
