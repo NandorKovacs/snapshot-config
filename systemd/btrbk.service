@@ -1,1 +1,7 @@
-/usr/lib/systemd/system/btrbk.service
+[Unit]
+Description=btrbk backup
+Documentation=man:btrbk(1)
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/btrbk run

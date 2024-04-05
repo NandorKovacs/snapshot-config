@@ -1,1 +1,11 @@
-/etc/pacman.d/hooks/btrbk-pre.hook
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = btrbk-hook
+When = PreTransaction
+Exec = /bin/sh -c '/etc/pacman.d/hooks.bin/btrbk-hook.sh'
