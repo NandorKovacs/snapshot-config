@@ -1,0 +1,1 @@
+/etc/pacman.d/hooks.bin/btrbk-hook.sh
